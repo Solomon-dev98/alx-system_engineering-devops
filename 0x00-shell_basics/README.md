@@ -5,3 +5,4 @@ The 0-current_working_directory script prints working directory, pwd.
 4-listmorefiles = ls-la =list files in long fomat including hidden files.
 5-listfilesdigitonly = ls -lna = list hidden and normal number files in long format
 6-firstdirectory = mkdir /tmp/my_first_directory/
+7-movethatfile = mv /tmp/betty /tmp/my_first_directory/
