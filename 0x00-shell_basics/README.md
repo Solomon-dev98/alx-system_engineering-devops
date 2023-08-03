@@ -8,5 +8,5 @@ The 0-current_working_directory script prints working directory, pwd.
 7-movethatfile = mv /tmp/betty /tmp/my_first_directory/
 8-firstdelete = rm /tmp/my_first_directory/betty
 9-firstdirdeletion = rmdir /tmp/my_first_directory/
-10-back = cd ..
+10-back = cd -
 11-lists = ls -la ./ ../ /boot
