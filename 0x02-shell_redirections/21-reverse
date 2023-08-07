@@ -1,2 +1,2 @@
 #!/bin/bashg
-rev
+rev | tac 
