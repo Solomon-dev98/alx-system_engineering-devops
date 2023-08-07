@@ -1,2 +1,2 @@
-#!/bin/bashg
-echo "School" | rev  
+#!/bin/bash
+rev  
