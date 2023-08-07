@@ -1,2 +1,2 @@
 #!/bin/bashg
-rev | tac 
+echo "School" | rev  
