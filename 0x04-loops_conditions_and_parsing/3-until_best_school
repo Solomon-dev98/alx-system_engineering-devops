@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+# a bash script that prints a text 10 times.
+
+text="Best School"
+i=0
+
+until ((i == 10)); do
+	echo "$text"
+	((i++))
+done
