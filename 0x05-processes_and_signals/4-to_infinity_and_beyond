@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+# A bash script that displays a text unless interrupted by sigint
+
+while true; do
+	echo "To infinity and beyond"
+	sleep 2
+done
