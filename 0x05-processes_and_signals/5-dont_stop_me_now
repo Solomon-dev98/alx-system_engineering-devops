@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+# A script that stops another process using the kill system call
+PROCESS_NAME="4-to-infinity_and_beyond"
+
+PIDS=$(pgrep -f "$PROCESS_NAME")
+
+if [[ -z "$PIDS" ]]; then
+	exit 1
+else
+	kill -9 "$PIDS"
+fi
