@@ -1,0 +1,19 @@
+#!/usr/bin/env bash
+# A bash script that displays the PID along with the processname
+# Use pgrep to find PIDs of processes containing "bash" in their name
+
+for pid in /proc/[0-9]*; do
+    # Extract the PID from the directory name
+    pid=$(basename "$pid")
+    
+    # Check if the comm file exists
+    if [[ -e /proc/$pid/comm ]]; then
+        # Read the process name from the comm file
+        process_name=$(cat /proc/$pid/comm)
+        
+        # Check if the process name contains the word "bash"
+        if [[ $process_name == *bash* ]]; then
+            echo "$pid $process_name"
+        fi
+    fi
+done
