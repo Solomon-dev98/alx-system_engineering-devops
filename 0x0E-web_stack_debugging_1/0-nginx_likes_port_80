@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+# a script that configures nginx to listen on port 80 of the server active IPv4
+
+mv /etc/nginx/sites-available/default /etc/nginx/sites-enabled/default
+cp /etc/nginx/sites-enabled/default /etc/nginx/sites-available/default
+service nginx stop
+pkill nginx
+service nginx start
