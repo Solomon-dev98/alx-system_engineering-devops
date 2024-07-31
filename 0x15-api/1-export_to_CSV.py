@@ -1,9 +1,9 @@
 #!/usr/bin/python3
 """Implementation of a python script that returns information
     using a REST api"""
+import csv
 import requests
 import sys
-import csv
 
 
 def get_employee_todo_progress(employee_id):
