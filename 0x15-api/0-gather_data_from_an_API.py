@@ -30,11 +30,11 @@ def get_employee_todo_progress(employee_id):
     employee_name = user_data.get("name")
     total = len(todos_data)
     done = [todo for todo in todos_data if todo.get
-                  ("completed")]
-    done_tasks = len(done)
+            ("completed")]
+    d_tasks = len(done)
 
     # Display progress
-    print(f"""Employee {employee_name} is done with tasks({done_tasks}/{total}):""")
+    print(f"Employee {employee_name} is done with tasks({d_tasks}/{total}):")
     for task in done:
         print(f"\t {task.get('title')}")
 
