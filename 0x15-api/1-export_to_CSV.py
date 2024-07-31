@@ -33,11 +33,6 @@ def get_employee_todo_progress(employee_id):
     done = [todo for todo in todos_data if todo.get("completed")]
     d_tasks = len(done)
 
-    # Display progress
-    print(f"Employee {employee_name} is done with tasks({d_tasks}/{total}):")
-    for task in done:
-        print(f"\t {task.get('title')}")
-
     # Export to CSV
     csv_filename = f"{employee_id}.csv"
     with open(csv_filename, mode='w', newline='') as csv_file:
@@ -49,7 +44,6 @@ def get_employee_todo_progress(employee_id):
                 task.get("completed"),
                 task.get("title")
             ])
-    print(f"Data exported to {csv_filename}")
 
 
 if __name__ == "__main__":
